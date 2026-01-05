@@ -14,6 +14,8 @@ window.onclick = (event) => {
     if (event.target === modal) modal.style.display = 'none';
 };
 
+
+
 // Add/Edit/Delete students
 const form = document.getElementById('studentForm');
 const table = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
