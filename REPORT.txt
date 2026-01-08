@@ -1,0 +1,57 @@
+INTRODUCTION
+
+This Student Performance System is a web based application designed to manage and monitor students’ academic performance efficiently. The main purpose of this is that the system is to store, display, add, edit, and delete student records along with their corresponding subjects and grades.
+
+DATA BASE DESIGN
+
+It consist of three related tables: the students, subjects, and grades and these tables are already normalized so that there are no redundant or to avoid redundancy which is repeating like that and to ensure integrity.
+
+ER Diagram:
+A student can have many grades and A subject can be taken by many students. The table serve as the relationship between those two(the student and subject).
+
+students (1) -> grades (many)
+subjects (1) -> grades (many)
+
+Table Description:
+Student Table 
+Column name 			Description
+student_id			Primary key, auto increment
+first_name			student first name
+last_name			student last name
+course				course they enrolled
+year_level			their year level
+
+
+Subjects Table
+Coulumn name			Description
+subject_id			primary key, auto increment
+subject_name			name of subject
+
+
+Grades Table
+Column name 			Description
+grade_id			primary key, auto increment
+student_id 			foreign key
+subject_id			foreign key
+final_grade			final grade of students
+semester			semester they are in
+academic_year			academic year
+
+WEB INTERFACE
+
+Main page
+Add student
+Edit student
+Delete student
+
+Functionalities
+-view existing record
+-add new student record
+-edit existing record
+-delete student record
+-data stored in MySQL database
+
+
+CHALLENGES AND LEARNING
+
+I have faced so many challenges like how do they work together and how to make a sql script then how to connect the backend to front end or how to connect the html,css and jscript and thanks to youtube for the tutorial and that way i have now understand how they connect but still i think there are more technique or what to connect the html with databases and the storing the data cause sometimes its not working and sometimes its glitching but i hope i gain more knowledge about web developing and databases.
